@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Pizzeria La 43</title>
+  <meta name="description" content="Galería visual de Pizzeria La 43: identidad, menú, estandarte y piezas de marca.">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pizzeria La 43 inicio">
+      <img src="assets/logo-nav.png" alt="La 43 Pizzeria">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#menu">Menú</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="esencia.html">Esencia</a>
+      <a href="galeria.html" aria-current="page">Galería</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-hero">
+      <div class="gallery-hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Galería</p>
+        <h1 line-height: 1.7>La 43 en detalles.</h1>
+        <p class="hero-copy">Identidad visual, piezas de menú y referencias que construyen el carácter de la pizzería.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="index.html#menu">Ver menú</a>
+          <a class="button secondary" href="esencia.html">Ver esencia</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-shell">
+        <div class="gallery-page-grid">
+          <figure class="gallery-tile featured lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Estandarte" data-full="assets/estandarte-cropped.jpeg" data-caption="Estandarte">
+            <img src="assets/estandarte-cropped.jpeg" alt="Estandarte La 43">
+            <figcaption>Estandarte</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Logo" data-full="Referencias/logo.jpeg" data-caption="Logo">
+            <img src="Referencias/logo.jpeg" alt="Logo La 43 Pizzeria">
+            <figcaption>Logo</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Menú de pizzas" data-full="assets/menu-pizzas-cropped.jpeg" data-caption="Menú de pizzas">
+            <img src="assets/menu-pizzas-cropped.jpeg" alt="Menú de pizzas La 43">
+            <figcaption>Menú de pizzas</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Menú de entradas" data-full="assets/menu-entradas-cropped.jpeg" data-caption="Menú de entradas">
+            <img src="assets/menu-entradas-cropped.jpeg" alt="Menú de entradas La 43">
+            <figcaption>Menú de entradas</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Menú de bebidas" data-full="assets/menu-bebidas-cropped.jpeg" data-caption="Menú de bebidas">
+            <img src="assets/menu-bebidas-cropped.jpeg" alt="Menú de bebidas La 43">
+            <figcaption>Menú de bebidas</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Instagram" data-full="assets/instagram-qr-cropped.jpeg" data-caption="Instagram">
+            <img src="assets/instagram-qr-cropped.jpeg" alt="Instagram de La 43">
+            <figcaption>Instagram</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Playera" data-full="Referencias/playera.jpeg" data-caption="Playera">
+            <img src="Referencias/playera.jpeg" alt="Playera La 43">
+            <figcaption>Playera</figcaption>
+          </figure>
+          <figure class="gallery-tile lightbox-trigger" tabindex="0" role="button" aria-label="Ampliar Paleta de colores" data-full="Referencias/paleta-colores.jpg" data-caption="Paleta de colores">
+            <img src="Referencias/paleta-colores.jpg" alt="Paleta de colores La 43">
+            <figcaption>Paleta de colores</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+    <button class="lightbox-close" type="button" aria-label="Cerrar imagen ampliada">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagen anterior">‹</button>
+    <figure class="lightbox-content">
+      <img class="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <p>Pizzeria La 43 · Galería</p>
+    <a href="index.html#contacto">Contacto</a>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
