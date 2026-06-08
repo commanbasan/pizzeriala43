@@ -136,7 +136,7 @@ a {
 .gallery-hero-media {
   position: absolute;
   inset: 0;
-  background-image: url("assets/fondo-hero.jpeg");
+  background-image: url("assets/fondo-hero.jpg");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
