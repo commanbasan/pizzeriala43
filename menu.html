@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos | Pizzeria La 43</title>
+  <meta name="description" content="Contrata Pizzeria La 43 para eventos privados, reuniones, cumpleaños y celebraciones.">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pizzeria La 43 inicio">
+      <img src="assets/logo-nav.png" alt="La 43 Pizzeria">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html" aria-current="page">Menú</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="esencia.html">Esencia</a>
+      <a href="galeria.html">Galería</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-hero">
+      <div class="event-hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Nuestra carta</p>
+        <h1>Menú la 43</h1>
+        <p class="hero-copy">Pizzas napolitanas, entradas frescas, postres deliciosos y bebidas para acompañar la mesa.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#menu">Conócelo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Nuestra carta</p>
+          <h2>Menú La 43</h2>
+          <p>Pizzas napolitanas, entradas frescas, postres deliciosos y bebidas para acompañar la mesa.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Categorias del menu">
+          <button class="menu-tab active" id="tab-pizzas" type="button" role="tab" aria-selected="true" aria-controls="panel-pizzas" data-menu-target="pizzas">Pizzas</button>
+          <button class="menu-tab" id="tab-entradas" type="button" role="tab" aria-selected="false" aria-controls="panel-entradas" data-menu-target="entradas">Entradas</button>
+          <button class="menu-tab" id="tab-postres" type="button" role="tab" aria-selected="false" aria-controls="panel-postres" data-menu-target="postres">Postres</button>
+          <button class="menu-tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-menu-target="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-panel active" id="panel-pizzas" role="tabpanel" aria-labelledby="tab-pizzas" data-menu-panel="pizzas">
+          <div class="menu-layout">
+            <div class="menu-list">
+              <article class="menu-item">
+                <div>
+                  <h3>Margarita</h3>
+                  <p>Base pomodoro, mozzarella fresca y albahaca.</p>
+                </div>
+                <span>$130</span>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Serrano</h3>
+                  <p>Base de pomodoro, queso mozzarella fresco, jamón serrano, durazno asado, miel y albahaca.</p>
+                </div>
+                <span>$220</span>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Pepperoni</h3>
+                  <p>Base pomodoro, queso mozzarella, pepperoni, miel picante y parmesano rallado.</p>
+                </div>
+                <span>$140</span>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Flor de auyama</h3>
+                  <p>Base pomodoro, queso mozzarella fresco, flor de calabaza, elote salteado, chile de cachuate y parmesano rallado.</p>
+                </div>
+                <span>$150</span>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Setas</h3>
+                  <p>Base de pesto, arúgula, setas, queso de cabra y nuez garapiñada.</p>
+                </div>
+                <span>$150</span>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Burrata</h3>
+                  <p>Base pomodoro, burrata, jitomate cherry, arúgula, miel y salsa pesto.</p>
+                </div>
+                <span>$200</span>
+              </article>
+            </div>
+            <figure class="menu-art">
+              <img src="assets/menu-pizzas-1.png" alt="Menú de pizzas La 43 1">
+              <img src="assets/menu-pizzas-2.png" alt="Menú de pizzas La 43 2">
+            </figure>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-entradas" role="tabpanel" aria-labelledby="tab-entradas" data-menu-panel="entradas" hidden>
+          <div class="menu-layout">
+            <div class="menu-list">
+              <article class="menu-item">
+                <div>
+                  <h3>Dip de ricotta</h3>
+                  <p>Mix de queso ricotta y queso de cabra especiado, con tomates asados, ajo y mezcla albahaca.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Carpaccio</h3>
+                  <p>Carpaccio de higo y prosciutto, con queso de cabra, arúgula, nuez y vinagreta de la casa.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Bruschetta</h3>
+                  <p>Base de pesto, queso mozzarella fresco, jamón serrano, tomates cherry asados y toque de miel.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Burrata</h3>
+                  <p>Tartar de jitomate con albahaca, parmesano, balsámico y aceite de oliva, coronado con burrata.</p>
+                </div>
+              </article>
+            </div>
+            <figure class="menu-art">
+              <img src="assets/menu-entradas.png" alt="Menú de entradas La 43">
+            </figure>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-postres" role="tabpanel" aria-labelledby="tab-postres" data-menu-panel="postres" hidden>
+          <div class="menu-layout">
+            <div class="menu-list">
+              <article class="menu-item">
+                <div>
+                  <h3>Blondie de tiramisú</h3>
+                  <p>Torre de blondie con crema mascarpone, espolvoreado de cocoa acompañado de nieve de café.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Cheesecake vasco</h3>
+                  <p>Tarta de queso cremosa, decorada con frutos rojos y tierra de galleta.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div>
+                  <h3>Jericalla Brûlée</h3>
+                  <p>Clásica jericalla tapatía con un sútil sabor a creme brûlée, decorada con fresa y hojas de hierbabuena.</p>
+                </div>
+              </article>
+            </div>
+            <figure class="menu-art">
+              <img src="assets/menu-postres.png" alt="Menú de postres La 43">
+            </figure>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" data-menu-panel="bebidas" hidden>
+          <div class="menu-layout">
+            <div class="drink-groups">
+              <article class="menu-card">
+                <h3>Clásicas</h3>
+                <ul>
+                  <li>Limonada</li>
+                  <li>Naranjada</li>
+                  <li>Mojito virgen</li>
+                  <li>Mojito de frutos rojos</li>
+                </ul>
+              </article>
+              <article class="menu-card">
+                <h3>Mockteles La 43</h3>
+                <ul>
+                  <li>Palermo: naranja y menta</li>
+                  <li>Cagliari: higo y granada</li>
+                  <li>Bari: albahaca y piña</li>
+                </ul>
+              </article>
+              <article class="menu-card">
+                <h3>Cafetería</h3>
+                <ul>
+                  <li>Espresso</li>
+                  <li>Latte</li>
+                  <li>Cappuccino</li>
+                  <li>Chai</li>
+                </ul>
+              </article>
+            </div>
+            <figure class="menu-art">
+              <img src="assets/menu-bebidas.png" alt="Menú de bebidas La 43">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <footer class="site-footer">
+    <p>Pizzeria La 43 · Eventos</p>
+    <a href="index.html#contacto">Contacto</a>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>

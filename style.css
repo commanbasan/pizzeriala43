@@ -136,7 +136,7 @@ a {
 .gallery-hero-media {
   position: absolute;
   inset: 0;
-  background-image: url("assets/estandarte-cropped.jpeg");
+  background-image: url("assets/fondo-hero.jpeg");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
@@ -151,7 +151,8 @@ a {
 }
 
 .gallery-hero-media {
-  background-image: url("assets/estandarte-cropped.jpeg");
+  background-position: top;
+  background-image: url("assets/fondo-gallery.jpeg");
 }
 
 .hero-overlay {
@@ -262,6 +263,16 @@ p {
   color: var(--paper);
   background: var(--terracotta);
   border-color: var(--terracotta);
+}
+
+.button.small { 
+  color: var(--paper);
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  min-height: 38px;
+  padding: 10px 24px;
+  font-size: 0.70rem;
+  transform: none;
 }
 
 .button.secondary {
@@ -418,6 +429,10 @@ p {
   position: sticky;
   top: 100px;
   margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  
 }
 
 .menu-art img {
@@ -709,6 +724,13 @@ body.lightbox-open {
 
 .info-block p + h3 {
   margin-top: 24px;
+} 
+
+.info-block .map-button {
+  display: inline-flex;
+  width: fit-content;
+  padding: 10px 16px;
+  margin: 8px 0 10px -2px;
 }
 
 .site-footer {
