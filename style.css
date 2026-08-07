@@ -397,7 +397,7 @@ p {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 12px 38px rgba(37, 42, 27, 0.08);
+  box-shadow: 0 12px 38px rgba(245, 86, 0, 0.08);
 }
 
 .menu-item {
@@ -720,10 +720,21 @@ body.lightbox-open {
 
 .info-block h3 + p {
   margin-top: 8px;
+  color: black;
 }
 
 .info-block p + h3 {
   margin-top: 24px;
+  color: black;
+} 
+
+.info-block p {
+  color: black;
+} 
+
+.info-block a {
+  color: rgb(194, 140, 40);
+  font-weight: bold;
 } 
 
 .info-block .map-button {
