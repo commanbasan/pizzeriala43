@@ -302,7 +302,8 @@ p {
 .contact-section,
 .event-options,
 .event-details,
-.event-cta {
+.event-cta,
+.privacy-section {
   padding: clamp(64px, 9vw, 112px) 0;
 }
 
@@ -765,6 +766,13 @@ body.lightbox-open {
   font-weight: 700;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  justify-content: flex-end;
+}
+
 .event-options {
   background: var(--cream);
 }
@@ -796,6 +804,65 @@ body.lightbox-open {
 
 .event-details {
   background: var(--paper);
+}
+
+.privacy-hero {
+  padding: clamp(70px, 9vw, 120px) 0;
+  color: var(--paper);
+  background:
+    linear-gradient(90deg, rgba(37, 42, 27, 0.92), rgba(37, 42, 27, 0.72)),
+    url("assets/estandarte-cropped.jpeg") center/cover;
+}
+
+.privacy-hero h1 {
+  color: var(--paper);
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.privacy-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.legal-content {
+  max-width: 880px;
+  padding: clamp(28px, 5vw, 64px);
+}
+
+.legal-content h2 {
+  margin-top: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.legal-content ul {
+  display: grid;
+  gap: 10px;
+  padding-left: 22px;
+  margin: 14px 0 0;
+}
+
+.legal-content a {
+  color: var(--terracotta-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .detail-list article {
@@ -871,6 +938,10 @@ body.lightbox-open {
 
   h1 {
     font-size: 4.5rem;
+  }
+
+  .privacy-hero h1 {
+    font-size: 3.6rem;
   }
 
   h2 {
@@ -960,6 +1031,10 @@ body.lightbox-open {
     font-size: 3.05rem;
   }
 
+  .privacy-hero h1 {
+    font-size: 2.8rem;
+  }
+
   h2 {
     font-size: 2.2rem;
   }
@@ -1010,5 +1085,9 @@ body.lightbox-open {
 
   .site-footer {
     display: grid;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
